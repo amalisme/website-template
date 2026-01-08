@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with us - we'd love to hear from you">
+    <title>Contact Us | YourBrand</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">YourBrand</a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Contact Us</h1>
+            <p class="page-subtitle">We'd love to hear from you. Send us a message!</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2 class="content-title">Get In Touch</h2>
+                    <p class="content-paragraph">Have a question or want to work together? Fill out the form and we'll get back to you as soon as possible.</p>
+                    
+                    <!-- Email -->
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">📧 Email</h3>
+                        <p class="contact-info-text">hello@yourbrand.com<br>support@yourbrand.com</p>
+                    </div>
+                    
+                    <!-- Phone -->
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">📞 Phone</h3>
+                        <p class="contact-info-text">+1 (555) 123-4567<br>Mon-Fri: 9AM - 6PM EST</p>
+                    </div>
+                    
+                    <!-- Location -->
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">📍 Location</h3>
+                        <p class="contact-info-text">123 Business Street<br>Suite 456<br>New York, NY 10001</p>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div>
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <!-- 
+                            IMPORTANT: To make this form work, you need to:
+                            1. Go to https://formspree.io
+                            2. Create a free account
+                            3. Create a new form
+                            4. Replace YOUR_FORM_ID in the action attribute above with your actual form ID
+                            
+                            Alternative free form services:
+                            - Basin (https://usebasin.com)
+                            - Form-Data (https://form-data.com)
+                            - Getform (https://getform.io)
+                        -->
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="form-input" 
+                                required
+                                placeholder="John Doe"
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="form-input" 
+                                required
+                                placeholder="john@example.com"
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                class="form-input"
+                                placeholder="+1 (555) 123-4567"
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                class="form-input" 
+                                required
+                                placeholder="How can we help you?"
+                            >
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="form-textarea" 
+                                required
+                                placeholder="Tell us more about your project or inquiry..."
+                            ></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary form-button">Send Message</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION (Optional) -->
+    <!-- You can replace this with an actual Google Maps embed -->
+    <section class="map-section" style="padding: 0;">
+        <div style="background: linear-gradient(135deg, var(--accent-color) 0%, var(--bg-light) 100%); height: 400px; display: flex; align-items: center; justify-content: center; color: var(--text-light); font-size: 1.25rem;">
+            <!-- To add Google Maps:
+                1. Go to https://www.google.com/maps
+                2. Search for your address
+                3. Click "Share" > "Embed a map"
+                4. Copy the iframe code and replace this placeholder div
+                
+                Example:
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=..." 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            -->
+            Google Maps Embed<br>(Replace with actual map)
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4 class="footer-title">YourBrand</h4>
+                    <p class="footer-text">Delivering excellence and innovation to help your business succeed.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li>Email: hello@yourbrand.com</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Address: 123 Business St, City</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">FB</a>
+                        <a href="#" class="social-link" aria-label="Twitter">TW</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">LI</a>
+                        <a href="#" class="social-link" aria-label="Instagram">IG</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 YourBrand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
